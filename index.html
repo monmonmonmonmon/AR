@@ -29,13 +29,18 @@
 <a-scene embedded 
    arjs="detectionMode: mono_and_matrix;
          matrixCodeType: 3x3;"
-   vr-mode-ui="enabled: false>
+   vr-mode-ui="enabled: false>	       
+<a-assets>
+  <video id="beach" playsinline webkit-playsinline autoplay loop="true" src="beach.mp4"></video>
+</a-assets>
    <a-marker type="barcodee" value="3">
    <a-image src="3.jpg"></a-image>				      
    <a-marker type="barcodee" value="5">
-     <a-box position="0 0 0"
-  material="color: blue;">
-     </a-box>
+   
+<a-marker type="barcode" value="3">
+  <a-video src="#beach" width="4" height="3" toggle-on-tap></a-video>
+</a-marker>
+
 	 </a-marker>
  <a-camera>
  </a-camera>
