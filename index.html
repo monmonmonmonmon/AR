@@ -5,14 +5,14 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.4.9/aframe/build/aframe-ar.js"></script>
 </head>
 <body style="margin: o; overflow: hidden;">
-<a-scene>
+<a-scene embedded 
+   arjs="matrixCodeType: 3x3;"
+   vr-mode-ui="enabled: false>
+   <a-marker type="barcodee" value="5">
      <a-box position="0 0 0"
   material="color: blue;">
      </a-box>
-	 <a-box position="0 3 0"
-  material="color: red;">
-     </a-box>
- </a-cone>
+	 </a-marker>
  <a-camera>
  </a-camera>
 </a-scene>
